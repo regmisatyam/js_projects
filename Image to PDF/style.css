@@ -1,0 +1,278 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Rubik",sans-serif;
+}
+:root{
+    --clr-blue: #1A91F0;
+    --clr-blue-mid: #1170CD;
+    --clr-blue-dark: #1A1C6A;
+    --clr-white: #fff;
+    --clr-bright: #EFF2F9;
+    --clr-dark: #1e2532;
+    --clr-black: #000;
+    --clr-grey: #656e83;
+    --clr-green: #1472ed;
+    --font-poppins: 'Poppins', sans-serif;
+    --font-manrope: 'Manrope', sans-serif;;
+    --transition: all 300ms ease-in-out;
+}
+a:-webkit-any-link {
+    color: currentColor;
+    cursor: pointer;
+    text-decoration: none;
+}
+body{
+    background-color: #f5f8ff;
+   
+}
+.main_bdy{
+    justify-content: center;
+    display: flex;
+    margin: 20px auto;
+}
+.container{
+    background-color: #ffffff;
+    width: 100%;
+    min-width: max-content;
+    position: relative;
+    margin:  10px;
+    padding: 30px 20px;
+    border-radius: 7px;
+    box-shadow: 0 20px 35px rgba(0,0,0,0.05);
+    display: flex;
+    flex-direction: column;
+}
+input[type="file"]{
+    display: none;
+}
+label{
+    display: block;
+    position: relative;
+    background-color: #025bee;
+    color: #ffffff;
+    font-size: 15px;
+    text-align: center;
+    width: 300px;
+    padding: 12px 0;
+    margin: auto;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.btn{
+    background-color: #00b900;
+    color: #ffffff;
+    font-size: 15px;
+    text-align: center;
+    width: 300px;
+    padding: 12px 0;
+    margin: auto;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#btn{
+    display: none;
+}
+#btn-2{
+    display: none;
+}
+#btn-fa{
+    display: none;
+    cursor: pointer;
+    color: #025bee;
+}
+.container p{
+    text-align: center;
+    margin: 20px 0 30px 0;
+}
+#images{
+    width: min-content;
+    position: relative;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.head-container{
+    margin: 20px;
+    text-align: center;
+}
+.head-container p{
+    font-size: large;
+    color: #ffffff;
+    padding: 15px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.head-container img{
+    width: 100%;
+    height: 300px;
+}
+.centered {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+figure{
+    width: fit-content;
+}
+img{
+    width: 300px;
+}
+figcaption{
+    text-align: center;
+    font-size: 2.4vmin;
+    margin-top: 0.5vmin;
+}
+delete{
+    padding: 2px;
+    color: #ffffff;
+    background: red;
+    cursor: pointer;
+}
+#pdf-preview-container{
+    margin: 0px auto;
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    gap: 20px;
+    padding: 30px;
+    border: 1px solid #000;
+    max-width: 400px;
+}
+
+/* navbar part */
+.navbar{
+    height: 80px;
+    display: flex;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.08) 0px 3px 8px;
+}
+.navbar .nav-container{
+    width: 100%;
+}
+
+.navbar-brand{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 1.8rem;
+}
+.navbar-brand-text{
+    color: var(--clr-dark);
+    font-weight: 600;
+    text-decoration: none;
+}
+.navbar-brand-text span{
+    color: var(--clr-blue);
+    text-decoration: none;
+}
+
+.navbar-brand-icon{
+    width: 120px;
+    margin-right: 6px;
+    opacity: 0.8;
+}
+.brand-and-toggler{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+}
+
+
+/* Add the following styles for the slider */
+.slider {
+    position: fixed;
+    top: 0;
+    right: -250px;
+    height: 100%;
+    width: 250px;
+    background-color: #333;
+    z-index: 1000;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding: 50px 15px 15px 15px;
+}
+
+.slider a {
+    padding: 15px;
+    text-decoration: none;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+
+.slider a:hover {
+    background-color: #555;
+}
+
+.close-btn {
+    display: contents;
+    font-size: 30px;
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 15px;
+    cursor: pointer;
+}
+
+.close-btn:hover {
+    background-color: #555;
+}
+.navbar-toggler-btn{
+    font-size: 30px;
+    margin: 10px;
+}
+/* footer */
+.footer{
+    padding: 3rem 0;
+    bottom: 0%;
+    
+}
+.ft-container{
+    margin: auto;
+    align-items: center;
+    text-align: center;
+    
+}
+.footer-content p{
+    color: var(--clr-grey);
+}
+.footer-content p span{
+    color: var(--clr-white);
+}
+.bg-dark{
+    background-color:black;
+}
+/* Your existing styles */
+
+
+/* Responsive styles for mobile devices */
+@media only screen and (max-width: 887px) {
+    .main_bdy {
+        clear: both; /* Clear any float to ensure content displays below */
+        display: grid; /* Adjust margin as needed */
+    }
+    .container{
+        position: relative;
+        margin:  10px auto;
+        padding: 50px 20px;
+        border-radius: 7px;
+        box-shadow: 0 20px 35px rgba(0,0,0,0.05);
+        min-width: min-content;
+    }
+    .navbar-brand-icon{
+        width: 90px;
+    }
+    .navbar-brand{
+        font-size: 1.4rem;
+    }
+    .brand-and-toggler{
+        padding: 4px;
+    }
+}
