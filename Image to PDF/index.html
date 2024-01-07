@@ -1,1 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Image 2 PDF | SATYAM</title>
+        
+        <!-- Open Graph Meta Tags for Facebook -->
+        <meta property="og:title" content="Image 2 PDF | SATYAM">
+        <meta property="og:description" content="Convert images into PDF in seconds with Img2PDF by SATYAM. Simply upload images and generate PDF files effortlessly.">
+        <meta property="og:image" content="https://satyamregmi.com.np/images/lion-logo.png">
+        <meta property="og:url" content="https://satyamregmi.com.np/">
+    
+        <!-- Twitter Card Meta Tags -->
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content="Image 2 PDF | SATYAM">
+        <meta name="twitter:description" content="Convert images into PDF in seconds with Img2PDF by SATYAM. Simply upload images and generate PDF files effortlessly.">
+        <meta name="twitter:image" content="https://satyamregmi.com.np/images/lion-logo.png">
+        <meta name="twitter:creator" content="@Satyam6Regmi">
+    
+        <!-- Other Meta Tags for SEO -->
+        <meta name="description" content="Convert images into PDF in seconds with Img2PDF by SATYAM. Simply upload images and generate PDF files effortlessly.">
+        <meta name="keywords" content="image to PDF, converter, SATYAM, PDF generator">
+        <meta name="author" content="SATYAM REGMI">
+    
+        <!-- Font Awesome Icons -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+    
+        <!-- Stylesheet -->
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" type="image/x-icon" href="https://satyamregmi.com.np/images/lion-logo.png">
+    </head>
+<body>
+    <nav class = "navbar">
+        <div class="nav-container">
+            <div class = "navbar-content">
+                <div class = "brand-and-toggler">
+                    <a href = "/" class = "navbar-brand">
+                        <img src = "https://satyamregmi.com.np/images/lion-logo.png" alt = "" class = "navbar-brand-icon">
+                        <span class = "navbar-brand-text">Img2PDF by <span>SATYAM</span>
+                    </a>
+                    <div type = "button" class = "navbar-toggler-btn" onclick="toggleSlider()">
+                    
+                            <i class="fa fa-bars"></i>
+                      
+                    </div>
+                    <div class="slider" id="slider">
+                        <button type="button" class="close-btn" onclick="toggleSlider()">&times;</button>
+                        <a href="/">Home</a>
+                        <a href="https://satyamregmi.com.np/projects/">Projects</a>
+                        <a href="https://satyamregmi.com.np/" target="_blank">Portfolio</a>
+                        <a href="https://games.satyamregmi.com.np/" target="_blank">Games</a>
+                        <a href="https://blogs.satyamregmi.com.np/" target="_blank">Blogs</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+<div class="head-container">
+    
+    <h1 >Convert Image into Pdf</h1>
+    <img src="/img2pdf.png" alt="image to pdf converter">
+    <p class="centered">
+        Simply upload Images and convert into PDF in Seconds.
+    </p>
+</div>
+    <div class="main_bdy">
+       
+    <div class="container" id="cont">
+        <h1>Upload Images</h1><br>
+        <input type="file" id="file-input" accept="image/png, image/jpeg" onchange="preview()" multiple>
+        <label for="file-input">
+            <i class="fas fa-upload"></i> &nbsp; Upload Photos
+        </label>
+        <p id="num-of-files">No Files Chosen</p>
+        <div id="images"> </div>
+        <br>
+        <span type="button" class="btn" id="btn" onclick="printPDF()">Download PDF</span>
+    </div>
+<div class="container">
+    <h1>Preview <i class="fas fa-eye"></i> <i class="fas fa-download" id="btn-fa" onclick="printPDF()"></i></h1>
+    <div id="pdf-preview-container"></div>
+    <span type="button" class="btn" id="btn-2" onclick="printPDF()">Download PDF</span>
+</div>
+</div>
+    
+    <!--Script-->
+    <script>
+        function toggleSlider() {
+        const slider = document.getElementById('slider');
+        const sliderWidth = slider.offsetWidth;
+        const currentRight = getComputedStyle(slider).right;
+    
+        if (currentRight === '0px' || currentRight === 'auto') {
+            slider.style.right = `-${sliderWidth}px`;
+        } else {
+            slider.style.right = '0';
+        }
+    }
+        </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.debug.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.11.338/pdf.min.js"></script>
 
+    <script src="script.js"></script>
+</body>
+<footer class = "footer bg-dark">
+    <div class="ft-container">
+        <div class = "footer-content text-center">
+            <p class="fs-15">&copy;Copyright 2024. All Rights Reserved - <span><a href="https://satyamregmi.com.np">SATYAM REGMI</a></span></p>
+        </div>
+    </div>
+</footer>
+</html>
